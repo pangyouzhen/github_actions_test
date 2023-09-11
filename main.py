@@ -1,4 +1,5 @@
 import pandas as pd
 
-df = pd.DataFrame([[1,2,3],[4,5,6]])
-print(df)
+df = pd.DataFrame({'A': [1, 2, 3]})
+# test retry
+print(df.monk)
