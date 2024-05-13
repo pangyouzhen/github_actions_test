@@ -1,6 +1,6 @@
 import json
 from datetime import datetime,timedelta
-from utils.date_utils import get_time_offset
+from stock.utils.date_utils import get_time_offset
 
 import pandas as pd
 import requests
