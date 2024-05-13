@@ -67,9 +67,9 @@ def stock_zh_a_roll_cls(td=2) -> pd.DataFrame:
     df = df[["ctime","title","brief"]]
     df["ctime"] = df["ctime"].apply(datetime.fromtimestamp)
     df = df[df["ctime"] > today_start]
+    df["ctime"] = df["ctime"] + timedelta(hours=8-get_time_offset)
     df.columns = ["时间","标题","简讯"]
     # 默认东八区
-    df["ctime"] = df["ctime"] + timedelta(hours=8-get_time_offset)
     # 线上跑的和线下跑的时区(东8区)不一致，得到的csv文件默认会从0到9点数据
     return df
 
