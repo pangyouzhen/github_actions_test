@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Display Github Actions bot username
         run: echo ${{ github.actor }} 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
