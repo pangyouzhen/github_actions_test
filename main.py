@@ -188,6 +188,7 @@ FUNCTION_MAP = {
     "sentiment": merge_data,
     # "cls": alerts_cls,
     "new":get_new,
+
 }
 
 
