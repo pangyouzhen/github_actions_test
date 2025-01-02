@@ -171,7 +171,7 @@ def main(*args, **kwargs):
         # date = kwargs["date"]
 
         # get_stock_zh_a_roll_cls(date=kwargs["date"])
-        # time.sleep(5)
+        time.sleep(5)
 
         # merge_data(date = kwargs["date"])
     else:
