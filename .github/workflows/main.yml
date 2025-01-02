@@ -40,8 +40,5 @@ jobs:
           git config --global user.name "pangyouzhen"
           git add .
           git commit -m "${{ steps.date.outputs.current_date }} update"
-          if [$? -eq 1];then
-            echo "no changes"
-          else
-            git push
-          fi
+          [ $? -eq 1 ] && echo "No changes to commit." || git push origin main
+

@@ -173,7 +173,7 @@ def main(*args, **kwargs):
         # get_stock_zh_a_roll_cls(date=kwargs["date"])
         # time.sleep(5)
 
-        merge_data(date = kwargs["date"])
+        # merge_data(date = kwargs["date"])
     else:
         logger.info("今天不是交易日")
 
